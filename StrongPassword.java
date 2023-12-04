@@ -1,14 +1,10 @@
 import java .util.Scanner;
-
 public class StrongPassword {
     static int passwordCheck(int n,String s)
     {   
         int num=1,cl=1,sl=1,spc=1;
-           
-            
             for(int i=0;i<s.length();i++)
             {
-            
             char c=s.charAt(i);
             if(c>=48 && c<=57)
             {
@@ -33,17 +29,12 @@ public class StrongPassword {
     {
         return 6-s.length();
     }
-
     }
     public static void main(String args[])
     {
         Scanner scan =new Scanner(System.in);
         int n =scan.nextInt();
         String s=scan.next();
-
-        System.out.println(passwordCheck(n,s));
-
-        
-    }
-    
+        System.out.println(passwordCheck(n,s));    
+    }  
 }
